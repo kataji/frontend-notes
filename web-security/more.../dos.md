@@ -1,0 +1,8 @@
+# Dos
+
+拒绝服务攻击（denial-of-service attack，DoS），亦称洪水攻击，其目的在于使目标电脑的网络或系统资源耗尽，使服务暂时中断或停止，导致其正常用户无法访问。
+
+分布式拒绝服务攻击（distributed denial-of-service attack，DDoS），指攻击者使用两个或以上被攻陷的电脑作为“僵尸”向特定的目标发动“拒绝服务”式攻击。
+
+[为什么cookie中有httpOnly属性-前端进阶之旅-微信公众号](https://mp.weixin.qq.com/s?__biz=MzA4MjA1MDM3Ng==&mid=2450810812&idx=1&sn=61efbef818ee174585c638b9e6491505&chksm=886b6b9bbf1ce28dd2db16771baa23c38b10b989d06d354de85c3d608c86b055611fc4798a2c&scene=0&xtrack=1&key=221452a4d6b5ef377e316dccd1b5ebf9b7994f024699d638428256c146489ca07042f7a0566a0f2e5f68803ac168d2e2c83ee910f26a5d34f42a77f9ff1b0b5a595d44b918dc8632c050d76cb1d97038c6eda3084da88dded4fd211c04fa3da65cacff8b603c8e1c320b626e94711d94a568b34f589e00aaefd5160d490c96de&ascene=1&uin=MTI2ODU0NDIwMQ%3D%3D&devicetype=Windows+10+x64&version=62090529&lang=zh_CN&exportkey=ASAm6xt78tRSO4HiXNzPbZc%3D&pass_ticket=%2FVpJDVgkqW83zuRca%2Bg52%2BWef1AzxKMGfRTl1Jb5rPyXlFWnMiW3wf%2F2KjPZvizc&wx_header=0)
+
