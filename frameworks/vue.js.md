@@ -1,48 +1,48 @@
 # Vue.js
 
-### Life Cycle
+## Life Cycle
 
 new了一个新的Vue对象，里面只有些默认玩意儿比如生命周期函数和默认事件，data和methods都是空的（？
 
-#### beforeCreate
+### beforeCreate
 
 data和methods之类的有了
 
-#### created
+### created
 
 模板编译好了，在内存中渲染成DOM了，但还没挂到页面上
 
-#### beforeMount
+### beforeMount
 
 挂到页面上了，data和view达成了同步
 
-#### mounted
+### mounted
 
 data更新了，view还没更新
 
-#### beforeUpdate
+### beforeUpdate
 
 通过内存中的DOM，diff，更新了DOM，data和view又同步了
 
-#### updated
+### updated
 
 调用`vm.$destroy()`后，啥都还可用？
 
-#### beforeDestroy
+### beforeDestroy
 
 已经完全销毁，啥都不可用了= =？
 
-#### destroyed
+### destroyed
 
-### Parent-Child Life Cycle
+## Parent-Child Life Cycle
 
 > `父beforeCreate`-&gt;`父created`-&gt;`父beforeMount`-&gt;`子beforeCreate`-&gt;`子created`-&gt;`子beforeMount`- &gt;`子mounted`-&gt;`父mounted`
-
+>
 > `父beforeUpdate`-&gt;`子beforeUpdate`-&gt;`子updated`-&gt;`父updated`
 
-### Diff
+## Diff
 
-> #### 42 既然Vue通过数据劫持可以精准探测数据变化,为什么还需要虚拟DOM进行diff检测差异?
+> ### 42 既然Vue通过数据劫持可以精准探测数据变化,为什么还需要虚拟DOM进行diff检测差异?
 >
 > > 现代前端框架有两种方式侦测变化,一种是pull一种是push
 >
@@ -51,9 +51,9 @@ data更新了，view还没更新
 >
 > [梳理Vue常考面试题型](https://mp.weixin.qq.com/s?__biz=MzA4MjA1MDM3Ng==&mid=2450810634&idx=1&sn=528dbceaec62241d94fb0b439fc42aae&chksm=886b6b2dbf1ce23bf8a07e075ca933da4599e214bea41f3c8541a20bf4f904f6e43800d17fc0&scene=126&sessionid=1603091150&key=221452a4d6b5ef370a0957a66478e9dc00ec458f727160703b401ef7096c945db5037011bf9a9694fc9d6777a62bea6cd35759e1357cef09bd001929828856b00384ce7555db8444c64a37773a4594e52d7c2f72ae56e1527491b6d5c973b49c3f146011f634808ca60b486b9d3776eb8457a600b1d109b1e0a17ff426503a58&ascene=1&uin=MTI2ODU0NDIwMQ%3D%3D&devicetype=Windows+10+x64&version=62090529&lang=zh_CN&exportkey=AaZX4TYHEwAxhQHShRgNyLM%3D&pass_ticket=%2FVpJDVgkqW83zuRca%2Bg52%2BWef1AzxKMGfRTl1Jb5rPyXlFWnMiW3wf%2F2KjPZvizc&wx_header=0)
 
-### Scoped Style
+## Scoped Style
 
-> #### 31 scoped样式穿透
+> ### 31 scoped样式穿透
 >
 > > `scoped`虽然避免了组件间样式污染，但是很多时候我们需要修改组件中的某个样式，但是又不想去除`scoped`属性
 >
@@ -79,7 +79,7 @@ data更新了，view还没更新
 > </template>
 > ```
 >
-> 2. 使用两个style标签
+> 1. 使用两个style标签
 >
 > ```markup
 > //Parent
@@ -106,7 +106,7 @@ data更新了，view还没更新
 >
 > [梳理Vue常考面试题型](https://mp.weixin.qq.com/s?__biz=MzA4MjA1MDM3Ng==&mid=2450810634&idx=1&sn=528dbceaec62241d94fb0b439fc42aae&chksm=886b6b2dbf1ce23bf8a07e075ca933da4599e214bea41f3c8541a20bf4f904f6e43800d17fc0&scene=126&sessionid=1603091150&key=221452a4d6b5ef370a0957a66478e9dc00ec458f727160703b401ef7096c945db5037011bf9a9694fc9d6777a62bea6cd35759e1357cef09bd001929828856b00384ce7555db8444c64a37773a4594e52d7c2f72ae56e1527491b6d5c973b49c3f146011f634808ca60b486b9d3776eb8457a600b1d109b1e0a17ff426503a58&ascene=1&uin=MTI2ODU0NDIwMQ%3D%3D&devicetype=Windows+10+x64&version=62090529&lang=zh_CN&exportkey=AaZX4TYHEwAxhQHShRgNyLM%3D&pass_ticket=%2FVpJDVgkqW83zuRca%2Bg52%2BWef1AzxKMGfRTl1Jb5rPyXlFWnMiW3wf%2F2KjPZvizc&wx_header=0)
 
-### computed和watch的触发时机
+## computed和watch的触发时机
 
 假设有data property `propA`，watch `propA`的watchA，有依赖`propA`的`compA`
 

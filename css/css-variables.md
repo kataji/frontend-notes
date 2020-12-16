@@ -52,7 +52,7 @@ js也能读css变量的值，虽然我还没想到这有什么卵用：
 element.style.getPropertyValue('--my-var')
 // 从来自任何地方的正在生效的style里取
 // getComputedStyle是一个window上的方法
-getComputedStyle(element).getPropertyValue('--my-var') 
+getComputedStyle(element).getPropertyValue('--my-var')
 ```
 
 对了，css变量是有scope的，scope在定义它的那个selector里。如果要定义全局变量，不如：

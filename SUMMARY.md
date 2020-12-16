@@ -39,6 +39,7 @@
       * [Hot Module Replacement](build-tools/module-bundlers-1/webpack/hot-module-replacement.md)
 * [Frameworks](frameworks/README.md)
   * [React.js](frameworks/react.js/README.md)
+    * [Getting Started](frameworks/react.js/getting-started.md)
     * [React Hooks](frameworks/react.js/react-hooks.md)
   * [Vue.js](frameworks/vue.js.md)
 * [Modern CSS](modern-css.md)

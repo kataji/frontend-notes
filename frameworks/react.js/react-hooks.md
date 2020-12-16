@@ -12,9 +12,9 @@ cjh：data、view依赖data关系的描述、data更新时view的更新
 
 ## 类组件与函数组件
 
-类组件：2013，v0.3.0，initial public release，含有state, props, render, lifecycle 
+类组件：2013，v0.3.0，initial public release，含有state, props, render, lifecycle
 
-函数组件：2016，v15.0.0，stateless components，仅含props和render。 
+函数组件：2016，v15.0.0，stateless components，仅含props和render。
 
 * （渲染？）高效，因为无需处理props和lifecycle。
 * 若数量多的时候可以尝试使用。
@@ -24,7 +24,7 @@ cjh：data、view依赖data关系的描述、data更新时view的更新
 
 ## react hooks
 
-上面版本使用函数组件的方式有点麻烦。 
+上面版本使用函数组件的方式有点麻烦。
 
 react hooks：2019，v16.8.0，针对函数组件，补充使用state和lifecycle以及其他react features的方式
 
@@ -50,9 +50,6 @@ react hooks：2019，v16.8.0，针对函数组件，补充使用state和lifecycl
   * 例如阿里的ahooks 
 * 自己写的hooks
   * 万物皆可hooks：useXXX\(\)
-
-
-
 * useState: 定义state和更新state的方法 
 * useEffect: vue watch? 可以模拟一些lifecycle
 
@@ -65,6 +62,4 @@ react hooks：2019，v16.8.0，针对函数组件，补充使用state和lifecycl
 ## react hooks 原理
 
 React Hook的实现原理和最佳实践（[https://zhuanlan.zhihu.com/p/75146261](https://zhuanlan.zhihu.com/p/75146261) 大概吧）
-
-
 

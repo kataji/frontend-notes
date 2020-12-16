@@ -1,6 +1,6 @@
 # Promise
 
-{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using\_promises" %}
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using\_promises" caption="" %}
 
 ## Promise
 
@@ -36,7 +36,7 @@ doFirstThing(params)
 
 其中每个`.then`其实也能传入successHandler和failHandler两个函数, 在promise被resolve或者reject的时候分别调用. `.then`会return handler 产生并return的新的promise, 从而实现chaining.
 
- `.catch`那段其实就相当于`.then(null, function handleError(error) {})`, 所以如果在handleError函数里继续return某promise, 还能继续chain下去.
+`.catch`那段其实就相当于`.then(null, function handleError(error) {})`, 所以如果在handleError函数里继续return某promise, 还能继续chain下去.
 
 用async/await语法糖可以把事情写得更漂亮一点, 它本质上就是promise.
 
@@ -68,9 +68,9 @@ Promise.all(arr.map(func => func())) // 生成了一个新promise
 // 记得catch
 ```
 
-也可以用Promise.allSettled. 会生成一个新promise, 会好好的等所有promise settle \(resolve or reject\). 
+也可以用Promise.allSettled. 会生成一个新promise, 会好好的等所有promise settle \(resolve or reject\).
 
-还有一个诡异的Promise.any, 是Promise.all的真正反义词. 有一个resolve就resolve, 只有全部reject才会reject, 不然就pending. 和race的差别是一个reject之后不会reject. 
+还有一个诡异的Promise.any, 是Promise.all的真正反义词. 有一个resolve就resolve, 只有全部reject才会reject, 不然就pending. 和race的差别是一个reject之后不会reject.
 
 ### race跑promise
 
@@ -170,7 +170,7 @@ new Promise((resolve, reject) => {
 2. 忘记return promise
 3. 忘记catch
 
-对2.: handler函数得继续return新的promise, 才能在后面接`.then`的chain, 达到依次执行的效果. 无返回的话会自动返回包成`Promise.resolve(undefined)`, 虽然也能在后面接`.then`, 但是注意链已经断了, 后续的chain等的不是在handler里产生的Promise, 而是一个不相关的Promise.resolve\(undefined\). 要让后续的chain接上, 必须返回**要被等的**那个promise, 可以真的返回promise, 或者返回一个非promise的value, 会自动包成`Promise.resolve(value)`. 
+对2.: handler函数得继续return新的promise, 才能在后面接`.then`的chain, 达到依次执行的效果. 无返回的话会自动返回包成`Promise.resolve(undefined)`, 虽然也能在后面接`.then`, 但是注意链已经断了, 后续的chain等的不是在handler里产生的Promise, 而是一个不相关的Promise.resolve\(undefined\). 要让后续的chain接上, 必须返回**要被等的**那个promise, 可以真的返回promise, 或者返回一个非promise的value, 会自动包成`Promise.resolve(value)`.
 
 ## Promise的所有方法
 

@@ -33,7 +33,5 @@
 
 :active时候隐藏，同时设置过渡时间为0。于是，点击释放的时候，就会有过渡效果。
 
-大家可以访问这个地址进行体验：https://xy-ui.codelabo.cn/docs/\#/xy-button
-
-
+大家可以访问这个地址进行体验：[https://xy-ui.codelabo.cn/docs/\#/xy-button](https://xy-ui.codelabo.cn/docs/#/xy-button)
 

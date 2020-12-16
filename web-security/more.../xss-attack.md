@@ -5,13 +5,13 @@ description: Cross Site Scripting Attack
 # XSS Attack
 
 * [为什么cookie中有httpOnly属性-前端进阶之旅-微信公众号](https://mp.weixin.qq.com/s?__biz=MzA4MjA1MDM3Ng==&mid=2450810812&idx=1&sn=61efbef818ee174585c638b9e6491505&chksm=886b6b9bbf1ce28dd2db16771baa23c38b10b989d06d354de85c3d608c86b055611fc4798a2c&scene=0&xtrack=1&key=221452a4d6b5ef377e316dccd1b5ebf9b7994f024699d638428256c146489ca07042f7a0566a0f2e5f68803ac168d2e2c83ee910f26a5d34f42a77f9ff1b0b5a595d44b918dc8632c050d76cb1d97038c6eda3084da88dded4fd211c04fa3da65cacff8b603c8e1c320b626e94711d94a568b34f589e00aaefd5160d490c96de&ascene=1&uin=MTI2ODU0NDIwMQ%3D%3D&devicetype=Windows+10+x64&version=62090529&lang=zh_CN&exportkey=ASAm6xt78tRSO4HiXNzPbZc%3D&pass_ticket=%2FVpJDVgkqW83zuRca%2Bg52%2BWef1AzxKMGfRTl1Jb5rPyXlFWnMiW3wf%2F2KjPZvizc&wx_header=0)
-* [常见六大Web安全攻防解析](https://juejin.im/post/6844903772930441230) ****
+* [常见六大Web安全攻防解析](https://juejin.im/post/6844903772930441230) _\*\*_
 
 > 这就需要在安全和自由之间找到一个平衡点，所以我们默认页面中可以引用任意第三方资源，然后又引入 CSP 策略来加以限制；默认 XMLHttpRequest 和 Fetch 不能跨站请求资源，然后又通过 CORS 策略来支持其跨域。
 >
 > 不过支持页面中的第三方资源引用和 CORS 也带来了很多安全问题，其中最典型的就是 XSS 攻击。
 
-### 什么是XSS攻击
+## 什么是XSS攻击
 
 即Cross Site Scripting攻击，为了与CSS区分，所以叫XSS攻击（到了现在其实不仅是Cross Site了。
 
@@ -24,9 +24,9 @@ description: Cross Site Scripting Attack
 * 修改DOM伪造表单，欺骗用户输入用户名密码等，然后发送给攻击者的服务器
 * 篡改DOM显示恶意内容
 
-### 恶意脚本注入方式
+## 恶意脚本注入方式
 
-#### 存储型（持久型）XSS攻击
+### 存储型（持久型）XSS攻击
 
 攻击者利用服务器漏洞，在服务器端存储了恶意脚本，用户正常访问，结果拿到了嵌入了恶意脚本的页面。
 
@@ -46,9 +46,9 @@ description: Cross Site Scripting Attack
 > * 盗取用户敏感私密信息
 > * 危害面广
 >
-> 链接：https://juejin.im/post/6844903772930441230
+> 链接：[https://juejin.im/post/6844903772930441230](https://juejin.im/post/6844903772930441230)
 
-#### 反射型（非持久型）XSS攻击
+### 反射型（非持久型）XSS攻击
 
 恶意代码somehow由用户发送给服务器，服务器再返回，并由浏览器执行。
 
@@ -65,13 +65,13 @@ description: Cross Site Scripting Attack
 > * 反馈率低，所以较难发现和响应修复
 > * 盗取用户敏感保密信息
 >
-> 链接：https://juejin.im/post/6844903772930441230
+> 链接：[https://juejin.im/post/6844903772930441230](https://juejin.im/post/6844903772930441230)
 
-#### 基于DOM的XSS攻击
+### 基于DOM的XSS攻击
 
 ？
 
-### 防御XSS攻击
+## 防御XSS攻击
 
 * 不要执行来源不明的字符串！
   * 不要把字符串嵌入DOM渲染
@@ -89,6 +89,4 @@ description: Cross Site Scripting Attack
   * 开启CSP可以通过服务器返回头，或网页meta标签
     * `<meta http-equiv="Content-Security-Policy" content="default-src https:">`
 * cookie HttpOnly：服务器响应头set-cookie的一个属性，可以防止js读cookie
-
-
 
