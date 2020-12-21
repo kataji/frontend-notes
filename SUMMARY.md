@@ -8,6 +8,7 @@
   * [CSS snippets](css/css-snippets/README.md)
     * [点击button会有圆形扩散影子的效果](css/css-snippets/dian-ji-button-hui-you-yuan-xing-kuo-san-ying-zi-de-xiao-guo.md)
 * [JavaScript](javascript/README.md)
+  * [NaN](javascript/nan.md)
   * [Promise](javascript/promise.md)
 * [Version Control Systems](version-control-systems.md)
 * [Web Security](web-security/README.md)
