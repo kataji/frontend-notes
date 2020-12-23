@@ -41,6 +41,7 @@
 * [Frameworks](frameworks/README.md)
   * [React.js](frameworks/react.js/README.md)
     * [Getting Started](frameworks/react.js/getting-started.md)
+    * [JSX](frameworks/react.js/jsx.md)
     * [React Hooks](frameworks/react.js/react-hooks.md)
   * [Vue.js](frameworks/vue.js.md)
 * [Modern CSS](modern-css.md)
