@@ -44,6 +44,7 @@
     * [JSX](frameworks/react.js/jsx.md)
     * [Rendering Elements](frameworks/react.js/rendering-elements.md)
     * [Components](frameworks/react.js/components.md)
+    * [Handling Events](frameworks/react.js/handling-events.md)
     * [React Hooks](frameworks/react.js/react-hooks.md)
   * [Vue.js](frameworks/vue.js.md)
 * [Modern CSS](modern-css.md)
