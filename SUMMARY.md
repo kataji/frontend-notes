@@ -5,6 +5,8 @@
 * [HTML](html.md)
 * [CSS](css/README.md)
   * [CSS variables](css/css-variables.md)
+  * [CSS functions](css/css-functions/README.md)
+    * [linear-gradient](css/css-functions/linear-gradient.md)
   * [CSS snippets](css/css-snippets/README.md)
     * [点击button会有圆形扩散影子的效果](css/css-snippets/dian-ji-button-hui-you-yuan-xing-kuo-san-ying-zi-de-xiao-guo.md)
 * [JavaScript](javascript/README.md)
