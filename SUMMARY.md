@@ -49,6 +49,7 @@
     * [Components](frameworks/react.js/components.md)
     * [Handling Events](frameworks/react.js/handling-events.md)
     * [React Hooks](frameworks/react.js/react-hooks.md)
+    * [unsorted](frameworks/react.js/unsorted.md)
   * [Vue.js](frameworks/vue.js.md)
 * [Modern CSS](modern-css.md)
 * [Web Components](web-components.md)
