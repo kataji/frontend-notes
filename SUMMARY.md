@@ -51,6 +51,8 @@
     * [Conditional Rendering](frameworks/react.js/unsorted.md)
     * [Lists and Keys](frameworks/react.js/lists-and-keys.md)
     * [Forms](frameworks/react.js/forms.md)
+    * [Composition vs Inheritance](frameworks/react.js/composition-vs-inheritance.md)
+    * [Thinking in React](frameworks/react.js/thinking-in-react.md)
     * [React Hooks](frameworks/react.js/react-hooks.md)
   * [Vue.js](frameworks/vue.js/README.md)
     * [Vue3 Composition API](frameworks/vue.js/vue3-composition-api.md)
