@@ -6,11 +6,9 @@ React的form元素常常用controlled component，就是状态存在react compon
 
 "Single source of truth."
 
-如果一个数据既可以是prop也可以是state，那大概率它应该是一个prop。
-
 注：
 
-* React里textarea也用value attr渲染内容，而不是在tag之间嵌文本。
+* React里textarea也用value prop渲染内容，而不是在tag之间嵌文本。
 * select的selected option不在option元素上放selected attribute，而在select元素上放value attribute。
 
 > This is more convenient in a controlled component because you only need to update it in one place.
